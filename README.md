@@ -11,6 +11,7 @@ Configuration files are stored in `src/main/resources/config`.
 | `notification-service` | MongoDB, Eureka, actuator, Swagger |
 | `user-service` | MySQL, mail, Eureka |
 | `api-camping` | Service port |
+| `produit-service` | Eureka, actuator, port |
 
 Clients use:
 
@@ -42,6 +43,7 @@ Start Eureka and this server, then inspect:
 http://localhost:8099/event-service/default
 http://localhost:8099/notification-service/default
 http://localhost:8099/user-service/default
+http://localhost:8099/produit-service/default
 ```
 
 The JSON response must list the corresponding classpath property source.
